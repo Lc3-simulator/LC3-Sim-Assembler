@@ -8,5 +8,13 @@ public class LC3Instance {
     short[] memoryArray = new short[65536];
     short[] tempRegisters = new short[8];
 
+    /**
+     * Method that lets user manually access and edit memory contents after initializing instance with assembler
+     * @param address
+     * @param contents
+     */
+    void set(String address, String contents){
+
+    }
 
 }
