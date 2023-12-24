@@ -14,7 +14,10 @@ public class LC3Instance {
      * @param contents
      */
     void set(String address, String contents){
-
+        short memAddress =  Short.parseShort("0x"+ address);
+        memoryArray[memAddress] = Short.parseShort("0x"+contents);
     }
+
+
 
 }
