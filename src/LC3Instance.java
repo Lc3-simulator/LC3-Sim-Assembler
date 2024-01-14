@@ -18,6 +18,18 @@ public class LC3Instance {
         memoryArray[memAddress] = Short.parseShort("0x"+contents);
     }
 
+void add(short dest, short reg1, short reg2, short offset) {
+        tempRegisters[dest] = (short) (reg1 + reg2 + offset);
+    }
+    void not(short dest, short reg1) {
+        // short = (short) ~short
+        tempRegisters[dest] = (short) ~reg1;
+    }
+    void and(short dest, short reg1, short reg2) {
+        // accumulator = (short) (accumulator & value);
+        tempRegisters[dest] = (short) (reg1 & reg2);
+
+    }
 
 
 
